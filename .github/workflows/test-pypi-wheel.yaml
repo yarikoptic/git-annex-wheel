@@ -53,3 +53,4 @@ jobs:
       - name: Test git-annex
         run: |
           git annex test
+          git annex version | grep MagicMime

@@ -121,6 +121,7 @@ jobs:
           source .venv/bin/activate
           git-annex version
           git-annex test
+          git-annex version | grep MagicMime
 
       - name: PyPi upload
         # only attempt an upload for release tags
